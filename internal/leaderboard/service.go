@@ -6,14 +6,6 @@ import (
 	"github.com/redis/go-redis/v9"
 )
 
-type LeaderboardService struct {
-	rdb *redis.Client
-}
-
-func NewLeaderboardService(rdb *redis.Client) *LeaderboardService {
-	return &LeaderboardService{rdb: rdb}
-}
-
 // Añadir puntuación
 func (s *LeaderboardService) SubmitScore(userID string, score float64) error {
 	return s.rdb.ZAdd(context.Background(), "global:leaderboard", redis.Z{
