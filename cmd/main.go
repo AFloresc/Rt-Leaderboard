@@ -1,11 +1,11 @@
 package main
 
 import (
-	"rt-leaderboard/internal/auth"
-	"rt-leaderboard/internal/leaderboard"
-	"rt-leaderboard/internal/reports"
-	"rt-leaderboard/internal/scores"
-	"rt-leaderboard/pkg/redis"
+	"real-time-leaderboard/internal/auth"
+	"real-time-leaderboard/internal/leaderboard"
+	"real-time-leaderboard/internal/reports"
+	"real-time-leaderboard/internal/scores"
+	"real-time-leaderboard/pkg/redis"
 
 	"github.com/gin-gonic/gin"
 )
